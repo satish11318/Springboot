@@ -1,0 +1,5 @@
+com\AngularjsRestApi\controller\EmployeeResource.class
+com\AngularjsRestApi\CrudApp.class
+com\AngularjsRestApi\repository\EmployeeRepository.class
+com\AngularjsRestApi\model\Employee.class
+com\AngularjsRestApi\service\EmployeeService.class

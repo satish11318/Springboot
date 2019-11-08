@@ -1,0 +1,87 @@
+<style>
+	.pt-5, .py-5 {
+	    padding-top: 3rem!important;
+	}
+    a {
+        text-decoration: none!important;
+        color: initial;
+        display: block;
+    }
+   ._4buPX .card {
+       margin-bottom: 1.5em;
+
+    }
+    ._4buPX {
+    width: 100%;
+    margin: 49px auto 97px;
+}
+._3eNnq {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+._38pEg {
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    border: 1px solid #d4d5d9;
+    border-radius: 3px;
+}
+._1F77L, ._2Tyn1 {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.fa-search {
+    left: 35px;
+    color: #3d4152;
+    font-size: 20px;
+    position: relative;
+}
+._2BJMh {
+    border: 0;
+    font-size: 20px;
+    color: #282c3f;
+    font-weight: 500;
+    padding: 20px 60px 20px 78px;
+    margin: 0;
+    width: 75%;
+    outline: none;
+    /* height: 68px; */
+    line-height: 1.3em;
+    caret-color: #fc8019;
+    text-transform: capitalize;
+}
+</style>
+<div class="container" ng-controller="SearchController">
+        <div class="row">
+                <div class="col-sm col-md-12 col-lg-12 pt-5">
+                <div class="_3eNnq">
+                        <div class="_38pEg">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <input type="text" ng-model="elastic.$" class="_2BJMh" placeholder="Search for shop name or location" autocomplete="off" value=""></div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row _4buPX">
+            <!--  col-sm -->
+            <div class="col-sm col-md-4 col-lg-4" ng-repeat="employee in employees | filter: elastic:strict">
+            	<a href="">
+               		 <div class="card" >
+                        <img class="card-img-top" width="266" height="266" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCTOyI_MBJKKP0fq0eHFr_hwhZ9W3NZ5MbD0rV0fYE65el5wvK&s">
+                        <div class="card-body">
+                          <h1>{{employee.name}}</h1>
+                          <p class="card-text">Address : {{employee.address}}</p>
+                          <p class="card-text">Category : {{employee.category}}</p>
+                          <p class="card-text">Owner Name : {{employee.ownername}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+             <!--  col-sm -->   
+        </div>
+    </div>    
+ 

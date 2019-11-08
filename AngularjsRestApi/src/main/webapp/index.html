@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="crudApp">
+<head>
+<title>Welcome</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified JavaScript -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<script type="text/javascript" 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-resource.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+</head>
+<body>
+	<p><a href="#!addShop">Add shop</a> | <a href="#!search">Search shop here</a></p>
+	<div ng-view></div>
+</body>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAMteJv6c1jwvcXaOhB4Bpf64MVvVES9VY&libraries=places"></script>
+<script src="http://jvandemo.github.io/angularjs-google-maps/dist/angularjs-google-maps.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/employee.service.js"></script>
+<script type="text/javascript" src="app/general.controller.js"></script>
+<script type="text/javascript" src="app/search.controller.js"></script>
+</html>
